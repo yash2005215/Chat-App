@@ -1,0 +1,139 @@
+/* Existing CSS Code */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: linear-gradient(white, rgb(128, 233, 236));
+}
+
+.container {
+    height: 650px;
+    width: 550px;
+    background-image: url('images\ \(2\).jpeg'); /* Ensure your image URL is correctly formatted */
+    border: 3px solid black;
+    border-radius: 15px;
+    position: relative;
+}
+
+.navBar {
+    display: flex;
+    align-items: center;
+    height: 55px;
+    width: auto;
+    background-color: #73ad07;
+    padding: 0 10px;
+    border-bottom: 3px solid black;
+    font-weight: bolder;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.navBar img {
+    height: 35px;
+    margin-right: 5px;
+}
+
+
+.message .msg{
+    display: flex;
+    align-items: center;
+    min-height: 40px;
+    border-radius: 10px;
+    margin-top: 10px;
+    padding: 0 15px;
+}
+
+.message .msg.sent{
+    justify-content: flex-end;
+    /* position: relative; */
+}
+
+.msg.sent div{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    max-width: 60%;
+    background-color: #ccf8f8; 
+    /* position: absolute; */
+    right: 0;
+    padding: 0 15px;
+    border-radius: 10px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.msg.received div{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    max-width: 60%;
+    background-color: #fff;
+    padding: 0 15px;
+    border-radius: 10px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.message .msg.user-joined {
+    justify-content: center;
+}
+
+.msg.user-joined div{
+    display: inline-block;
+    background-color: #fff;
+    color: black;
+    height: 21px;
+    width: auto;
+    padding: 0 8px;
+    border-radius: 10px;
+}
+
+.message {
+    max-height: 520px;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+}
+
+.message::-webkit-scrollbar{
+    width: 0;
+    background: transparent;
+}
+
+.message{
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.msg-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    align-items: center;
+    width: 90%;
+    background-color: #fff;
+    height: 35px;
+    margin-top: 10px;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 15px;
+    left: 5%;
+}
+
+.msg-box input {
+    border: none;
+    margin-left: 10px;
+    font-size: larger;
+    width: 90%;
+    outline: none;
+}
+
+.msg-box button {
+    cursor: pointer;
+    border: 0;
+    background-color: #fff;
+    font-size: larger;
+    font-weight: 900;
+    margin-right: 10px;
+}
