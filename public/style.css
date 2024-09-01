@@ -9,7 +9,7 @@ body {
 
 .container {
     height: 650px;
-    width: 550px;
+    width: 310px;
     background-image: url('images\ \(2\).jpeg'); /* Ensure your image URL is correctly formatted */
     border: 3px solid black;
     border-radius: 15px;
