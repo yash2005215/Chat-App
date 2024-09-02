@@ -39,7 +39,12 @@ socket.on('user left', function (user) {
 function appendMessage(msg, type) {
     const div = document.createElement('div');
     div.classList.add('msg', type);
-    div.innerHTML = `<div><span><strong><u>${msg.user}</u> </strong></span><span>${msg.text}<span></div>`;
+    if(type == 'sent') {
+        div.innerHTML = `<div><span>${msg.text}</span></div>`;
+    }
+    else {
+        div.innerHTML = `<div><pre><strong>${msg.user}...</strong></pre><span>${msg.text}</span></div>`;
+    }
     messageContainer.appendChild(div);
     messageContainer.scrollTop = messageContainer.scrollHeight; // Scroll to bottom
 }

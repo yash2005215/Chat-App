@@ -62,7 +62,7 @@ body {
     background-color: #ccf8f8; 
     /* position: absolute; */
     right: 0;
-    padding: 0 15px;
+    padding: 15px;
     border-radius: 10px;
     word-wrap: break-word;
     overflow-wrap: break-word;
@@ -73,11 +73,14 @@ body {
     flex-direction: column;
     width: auto;
     max-width: 60%;
-    background-color: #fff;
-    padding: 0 15px;
-    border-radius: 10px;
     word-wrap: break-word;
     overflow-wrap: break-word;
+}
+
+.msg.received div span {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
 }
 
 .message .msg.user-joined {
