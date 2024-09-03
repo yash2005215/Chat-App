@@ -24,6 +24,18 @@ submit.addEventListener('click', () => {
     }
 });
 
+input.addEventListener('keydown', (event) => {
+    if (event.key === "Enter" && input.value) {
+        const message = {
+            user: username,
+            text: input.value
+        };
+        appendMessage(message, 'sent');
+        socket.emit('chat message', message);
+        input.value = '';
+    }
+})
+
 socket.on('chat message', function (msg) {
     appendMessage(msg, 'received');
 });
